@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Serie TV Popolari</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+      background-color: #222;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff3333;
+    }
+
+    header h1 {
+      text-align: center;
+      color: #ff3333;
+      margin: 30px 0;
+      font-size: 3em;
+      text-shadow: 0 0 10px #ff3333;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .serie-card {
+      background-color: #111;
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .serie-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 51, 51, 0.6);
+    }
+
+    .serie-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .serie-card h2 {
+      margin: 10px 0;
+      color: #ff3333;
+    }
+
+    .serie-card a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      background-color: #ff3333;
+      margin: 10px auto 20px;
+      width: 80%;
+      padding: 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .serie-card a:hover {
+      background-color: #ff6666;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #111;
+      color: #aaa;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="serie.html">Serie TV</a></li>
+      <li><a href="preferiti.html">Preferiti</a></li>
+      <li><a href="curiosita.html">Curiosità</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Serie TV Popolari</h1>
+  </header>
+
+  <main>
+    <div class="serie-card">
+      <img src="img/breakingbad.jpg" alt="Breaking Bad">
+      <h2>Breaking Bad</h2>
+      <a href="schede/breaking.html">Scopri di più</a>
+    </div>
+
+    <div class="serie-card">
+      <img src="img/stranger.jpg" alt="Stranger Things">
+      <h2>Stranger Things</h2>
+      <a href="schede/stranger.html">Scopri di più</a>
+    </div>
+
+    <div class="serie-card">
+      <img src="img/dark.jpg" alt="Dark">
+      <h2>Dark</h2>
+      <a href="schede/dark.html">Scopri di più</a>
+    </div>
+
+    <div class="serie-card">
+      <img src="img/friends.jpg" alt="Friends">
+      <h2>friends</h2>
+      <a href="schede/friends.html">Scopri di più</a>
+    </div>
+
+    <div class="serie-card">
+      <img src="img/theoffice.jpg" alt="The Office">
+      <h2>The Office</h2>
+      <a href="schede/the office.html">Scopri di più</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Scopri alcune delle serie più acclamate come Breaking Bad, Stranger Things e Dark.</p>
+    <p>© 2025 - Creato da Matteo Di Muzio</p>
+  </footer>
+</body>
+</html>

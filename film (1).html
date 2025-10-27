@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Film Consigliati</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+      background-color: #222;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff3333;
+    }
+
+    header h1 {
+      text-align: center;
+      color: #ff3333;
+      margin: 30px 0;
+      font-size: 3em;
+      text-shadow: 0 0 10px #ff3333;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .film-card {
+      background-color: #111;
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .film-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 51, 51, 0.6);
+    }
+
+    .film-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .film-card h2 {
+      margin: 10px 0;
+      color: #ff3333;
+    }
+
+    .film-card a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      background-color: #ff3333;
+      margin: 10px auto 20px;
+      width: 80%;
+      padding: 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .film-card a:hover {
+      background-color: #ff6666;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #111;
+      color: #aaa;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="serie.html">Serie TV</a></li>
+      <li><a href="preferiti.html">Preferiti</a></li>
+      <li><a href="curiosita.html">Curiosità</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Film Consigliati</h1>
+  </header>
+
+  <main>
+    <div class="film-card">
+      <img src="img/inception.jpg" alt="Inception">
+      <h2>Inception</h2>
+      <a href="schede/inception.html">Scopri di più</a>
+    </div>
+
+    <div class="film-card">
+      <img src="img/avatar.jpg" alt="Avatar">
+      <h2>Avatar</h2>
+      <a href="schede/avatar.html">Scopri di più</a>
+    </div>
+
+    <div class="film-card">
+      <img src="img/shutterisland.jpg" alt="Shutter Island">
+      <h2>Shutter Island</h2>
+      <a href="schede/shutter.html">Scopri di più</a>
+    </div>
+
+    <div class="film-card">
+      <img src="img/theconjuring.jpg" alt="The Conjuring - Il caso Enfield">
+      <h2>TheConjuring - Il caso Enfield</h2>
+      <a href="schede/theconjuring.html">Scopri di più</a>
+    </div>
+
+    <div class="film-card">
+      <img src="img/wallerulez.jpeg" alt="Wall·E">
+      <h2>Wall·E</h2>
+      <a href="schede/walle.html">Scopri di più</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Guarda alcuni dei film più belli e acclamati dalla critica come Inception, Avatar e Wall·E.</p>
+    <p>© 2025 - Creato da Matteo Di Muzio</p>
+  </footer>
+</body>
+</html>
+
